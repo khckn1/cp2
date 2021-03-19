@@ -8,6 +8,12 @@ function initMap(lat, lon) {
   map = new google.maps.Map(document.getElementById("map"), {
     center: {lat: lat, lng: lon},
     zoom: 15,
+    mapTypeId: 'satellite'
+  });
+
+  new google.maps.Marker({
+    position: {lat: lat, lng: lon},
+    map
   });
 }
 
@@ -21,3 +27,4 @@ function createMap(element) {
 document.getElementById('picture1').addEventListener('click', createMap);
 document.getElementById('picture2').addEventListener('click', createMap);
 document.getElementById('picture3').addEventListener('click', createMap);
+document.getElementById('headPic').addEventListener('click', createMap);
