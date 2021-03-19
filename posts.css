@@ -1,0 +1,31 @@
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+  height: 50vw;
+  border: solid 2px red;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .post img {
+    width: 100%;
+    border: solid 2px #F0EAD6; /*eggshell*/
+  }
+
+  .post {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  .post img {
+    float: right;
+    width: 50%;
+    border: solid 2px #F0EAD6; /*eggshell*/
+  }
+
+  .post {
+    float: left;
+  }
+}

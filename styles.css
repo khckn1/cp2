@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: #F0EAD6; /*eggshell*/
+}
+
+h1 {
+  font-family: 'Satisfy', cursive;
+  color: #1c870e; /*green*/
+}
+
+h2 {
+  font-family: 'Anton', sans-serif;
+}
+
+p {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.4em
+}
+
+.navbar-brand {
+  color: #414141 !important; /*dark grey*/
+  font-family: "Satisfy", cursive !important;
+}
+
+.bg-dark {
+  background-color: #89CFF0 !important; /*baby blue*/
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: #414141 !important; /*dark grey*/
+  font-family: 'Noto Sans JP', sans-serif !important;
+}
+
+.navbar-expand-lg .navbar-nav .active .nav-link {
+  color: #F0EAD6 !important; /*eggshell*/
+  font-family: 'Noto Sans JP', sans-serif !important;
+}
+
+.content {
+  display: flex;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.post {
+  border: solid 5px #F0EAD6; /*eggshell*/
+  padding: 5px;
+  width: 100%;
+}
+
+.text {
+  float: left;
+  width: auto;
+}
+
+.picture img {
+  border: solid 2px #F0EAD6; /*eggshell*/
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  color: white;
+  border-bottom: solid 15px #1c870e; /*green*/
+}
+.post {
+  width: 100%;
+  background-color: #999999; /*light grey*/
+}
+
+.page-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.direct-contact, .social-media, .right-box {
+  padding: 5px;
+}
+
+.link:visited, .link:link {
+  color: #222222; /*dark grey*/
+}
+
+@media only screen and (max-width: 500px) {
+  .content {
+    display: flex;
+  	align-items: center;
+  	flex-direction: row;
+  	flex-wrap: wrap;
+  }
+
+  .post {
+    border: solid 5px #F0EAD6; /*eggshell*/
+    padding: 5px;
+    width: 100%;
+  }
+
+  .picture {
+    float: right;
+    width: 50%;
+    justify-content: center;
+    padding-top: 25px;
+  }
+
+  .picture img {
+    border: solid 2px #F0EAD6; /*eggshell*/
+  }
+
+  .header {
+    position: relative;
+    text-align: center;
+    color: white;
+    border-bottom: solid 15px #1c870e; /*green*/
+  }
+
+  .footer {
+    background-color: #1c870e; /*green*/
+    color: #222222; /*dark grey*/
+  }
+
+  .post {
+    width: 100%;
+    background-color: #999999; /*light grey*/
+  }
+
+  .page-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .direct-contact, .social-media, .right-box {
+    padding: 5px;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 1000px) {
+  .header {
+    position: relative;
+    text-align: center;
+    max-height: 500px;
+    border-bottom: solid 15px #1c870e; /*green*/
+  }
+
+  .header img {
+    max-height: inherit;
+    object-fit: cover;
+    border-bottom: solid 15px #1c870e; /*green*/
+  }
+
+  .picture {
+    float: right;
+    max-width: 50%;
+    justify-content: center;
+    padding-top: 25px;
+  }
+
+  .page-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  h1 {
+    font-size: 8em;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #1c870e; /*green*/
+    color: #222222; /*dark grey*/
+  }
+}
+
+@media only screen and (min-width: 1001px) {
+  .header {
+    position: relative;
+    text-align: center;
+    max-height: 500px;
+    border-bottom: solid 15px #1c870e; /*green*/
+  }
+
+  .content {
+    justify-content: center;
+    align-content: center;
+  }
+
+  .header img {
+    max-height: inherit;
+    object-fit: cover;
+    border-bottom: solid 15px #1c870e; /*green*/
+  }
+
+  .picture {
+    float: right;
+    max-width: 20%;
+    justify-content: center;
+    padding-top: 25px;
+    padding-left: 10px;
+  }
+
+  .page-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .post {
+    border: solid 5px #F0EAD6; /*eggshell*/
+    padding: 5px;
+    width: 70%;
+  }
+
+  h1 {
+    font-size: 8em;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #1c870e; /*green*/
+    color: #222222; /*dark grey*/
+  }
+}
