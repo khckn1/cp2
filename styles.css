@@ -11,6 +11,7 @@ body {
 h1 {
   font-family: 'Satisfy', cursive;
   color: #1c870e; /*green*/
+	text-shadow: 2px 2px #f0ead6; /*eggshell*/
 }
 
 h2 {
