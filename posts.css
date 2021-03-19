@@ -2,6 +2,7 @@
        * element that contains the map. */
 #map {
   height: 50vw;
+  border: solid 2px #f0ead6; /*eggshell*/
 }
 
 
