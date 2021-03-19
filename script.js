@@ -14,7 +14,7 @@ function initMap(lat, lon) {
   new google.maps.Marker({
     position: {lat: lat, lng: lon},
     map,
-    title: lat + ", " lon
+    title: toString(lat) + ", " + toString(lon)
   });
 }
 
