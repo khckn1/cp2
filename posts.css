@@ -2,14 +2,14 @@
        * element that contains the map. */
 #map {
   height: 50vw;
-  border: solid 2px #f0ead6; /*eggshell*/
+  border: solid 2px #454545; /*onyx*/
 }
 
 
 @media only screen and (max-width: 500px) {
   .post img {
     width: 100%;
-    border: solid 2px #F0EAD6; /*eggshell*/
+    border: solid 2px #454545; /*onyx*/
   }
 
   .post {
@@ -22,7 +22,7 @@
   .post img {
     float: right;
     width: 50%;
-    border: solid 2px #F0EAD6; /*eggshell*/
+    border: solid 2px #454545; /*onyx*/
   }
 
   .post {
