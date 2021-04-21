@@ -1,8 +1,50 @@
 /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
+* element that contains the map. */
 #map {
   height: 50vw;
   border: solid 2px #454545; /*onyx*/
+}
+
+.flightsCont {
+  margin-top: 50px;
+  border: solid 2px #454545;
+  text-align: center;
+  background-color: #454545;
+  color: #efe6dd;
+}
+
+.flightsCont h2 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 3em;
+}
+
+#flights {
+  display: flex;
+  justify-content: space-around;
+  background-color: #454545;
+}
+
+.flight {
+  padding: 10px;
+  background-color: #efe6dd;
+  border: solid 5px #454545;
+  color: #454545;
+}
+
+.flight h3 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.2em;
+}
+
+.flight p {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: .7em;
+}
+
+.flight .price {
+  padding: 5px;
+  background-color: #fff;
+  font-size: 1em;
 }
 
 
