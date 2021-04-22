@@ -87,13 +87,14 @@ function getFlights(airport, authKey) {
   }
 
   var today = new Date();
-  var dd = String(today.getDate()).padStart(2, '0');
-  var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-  var yyyy = today.getFullYear();
+  var nextWeek = new Date(today.getTime() + 7 * 24 * 60 * 60 * 1000);
+  var dd = String(nextWeek.getDate()).padStart(2, '0');
+  var mm = String(nextWeek.getMonth() + 1).padStart(2, '0'); //January is 0!
+  var yyyy = nextWeek.getFullYear();
 
-  today = yyyy + '-' + mm + '-' + dd;
+  nextWeek = yyyy + '-' + mm + '-' + dd;
 
-  const url = 'https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=' + airport + '&destinationLocationCode=' + airportDest + '&departureDate=' + today + '&adults=1&nonStop=false&currencyCode=USD&max=5';
+  const url = 'https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=' + airport + '&destinationLocationCode=' + airportDest + '&departureDate=' + nextWeek + '&adults=1&nonStop=false&currencyCode=USD&max=5';
 
   fetch(url, {
     headers: {
@@ -103,7 +104,6 @@ function getFlights(airport, authKey) {
   .then(function(response) {
     return response.json();
   }).then(function(json) {
-    console.log(json.data[0].itineraries[0].segments);
     let flight = "";
 
     if (json.data.length == 0) {
